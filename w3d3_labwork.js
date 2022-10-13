@@ -4,6 +4,9 @@
 // Part II: JavaScript Reps
 // Easy Going
 // Write a for loop that will log the numbers 1 through 20.
+for(let x = 1; x <=20; x++) {
+    console.log(x)
+}
 
 // The commit message should read:
 // "Easy Going answered"
