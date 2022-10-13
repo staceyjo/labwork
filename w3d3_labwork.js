@@ -104,28 +104,75 @@ for (const element of array1) {
 // Methods, Revisited
 // Here is a list of favMovies:
 
-// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
 // Console log: the index of Titanic
-// Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
+console.log(favMovies[8])
+
+// Do the following and console.log the final results 
+    // (I have included some thought questions, you don't have to write out an answer for those marked as such):
 // Note: if you have to add to the array, feel free to add any movie you'd like
 
-// use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
+// use the .sort method 
+// Thought question: what did this do to the array? Did it permanently alter it?
+favMovies.sort()
+console.log(favMovies)
+console.log("It sorted the items in the array")
+
+
 // Use the method pop
-// push"Guardians of the Galaxy"
+favMovies.pop()
+console.log(favMovies)
+console.log("It removed Volver from the list")
+
+// push "Guardians of the Galaxy"
+favMovies.push("Guardians of the Galaxy")
+console.log(favMovies)
+console.log("It added to the end of the list")
+
 // Reverse the array
-// Use the shiftmethod
+favMovies.reverse()
+console.log(favMovies)
+
+
+// Use the shift method
+favMovies.shift()
+console.log(favMovies)
+console.log(("Took first element of the movie array off"))
+
 // unshift- what does it return?
-// splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
-// slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
+favMovies.unshift()
+console.log(favMovies)
+console.log("It returns the same list, because we didn't put anything in the parens")
+
+// splice "Django Unchained" and add "Avatar" 
+//(try finding the index of "Django Unchained", 
+// instead of counting it yourself) 
+//Thought question: did this permanently alter our array?
+
+console.log(favMovies.indexOf("Django Unchained"))
+favMovies.splice(favMovies.indexOf('Django Unchained'), 14, "Avatar");
+console.log(favMovies)
+
+// slice the last half of the array 
+// (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) 
+// - Thought question: did this permanently alter our array?
+
+
 // store the value of your slicein a variable, console.log it - Thought question: what is going on here?
 // console.log your final results
+
+
 // After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+
 
 // Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
 
+
 // The commit message should read:
 // "Methods Revisited answered"
+
+
 
 // Where is Waldo
 // With the following multi-dimensional array
@@ -141,6 +188,8 @@ for (const element of array1) {
 // The commit message should read:
 // "Where is Waldo answered"
 
+
+
 // Excited Kitten
 // Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 // For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
@@ -153,6 +202,8 @@ for (const element of array1) {
 
 // The commit message should read:
 // "Excited Kittens answered"
+
+
 
 // Find the Median
 // Find the median number in the following numsarray, then console.log that number.
