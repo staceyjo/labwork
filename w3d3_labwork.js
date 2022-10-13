@@ -25,15 +25,29 @@ for (let y = 0; y <=200; y++) {
 // "Get Even answered"
 
 // Fizz Buzz
-// This is a classic problem that you should get really comfortable solving. If you've solved it before, try to make it more elegant and short.
+// This is a classic problem that you should get really comfortable solving. 
+// If you've solved it before, try to make it more elegant and short.
 
 // Write a javascript application that logs all numbers from 1 - 100.
 // If a number is divisible by 3 log "Fizz" instead of the number.
 // If a number is divisible by 5 log "Buzz" instead of the number.
 // If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
 
+for (b = 1; b <= 100; b++) {
+    if(b % 3 === 0 && b % 5 === 0) {
+        console.log("Fizzbuzz")
+    } else if(b % 3 == 0) {
+        console.log("Fizz")
+    } else if(b % 5 === 0) {
+        console.log("Buzz")
+    } else {
+        console.log(b)
+    }
+}
+
 // The commit message should read:
 // "Fizz Buzz answered"
+
 
 // Wild Wild Life
 // Use the following arrays to answer the questions below (name,species ,age, hometown): You should be modifying the elements by accessing them. It is up to you which methods to use.
