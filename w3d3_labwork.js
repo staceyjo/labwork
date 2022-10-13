@@ -15,6 +15,12 @@ for(let x = 1; x <=20; x++) {
 // Write a for loop that will log only the even numbers in 0 through 200.
 // Hint: Think about the increment expression
 
+for (let y = 0; y <=200; y++) {
+    if(y % 2 === 0) {
+        console.log(y + "is an even number")
+    }
+}
+
 // The commit message should read:
 // "Get Even answered"
 
